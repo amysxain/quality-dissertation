@@ -1,0 +1,24 @@
+.icon {
+  background: url(../images/sprite.png) no-repeat left top;
+  margin: 30px auto;
+}
+.icon.lg-head-before {
+  width: 160px;
+  height: 160px;
+}
+.icon.sm-head-before {
+  width: 60px;
+  height: 60px;
+}
+.icon.icon-2 {
+  background-position: 0 -206px;
+}
+.icon.icon-3 {
+  background-position: -86px -206px;
+}
+.icon.icon-4 {
+  background-position: -171px -206px;
+}
+.icon.icon-5 {
+  background-position: -171px -206px;
+}

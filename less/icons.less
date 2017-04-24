@@ -1,0 +1,29 @@
+.bgPos(@X: 0, @Y: 0) {
+  background-position:  @X @Y;
+}
+.icon {
+  background: url(../images/sprite.png) no-repeat left top;
+  margin:30px auto;
+
+  &.lg-head-before {
+    width: 160px;
+    height: 160px;
+  }
+  &.sm-head-before {
+    width: 60px;
+    height: 60px;
+  }
+
+  &.icon-2 {
+    .bgPos(0, -206px);
+  }
+  &.icon-3 {
+    .bgPos(-86px, -206px);
+  }
+  &.icon-4 {
+    .bgPos(-171px, -206px);
+  }
+  &.icon-5 {
+    .bgPos(-171px, -206px);
+  }
+}
