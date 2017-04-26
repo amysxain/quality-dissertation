@@ -102,7 +102,7 @@
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane fade in active" id="package-1">
 
-                                            <div class="col-xs-2 rates">
+                                            <div class="col-sm-2 col-xs-4 rates">
                                                 <label for="planselect1">
                                                     <input type="radio" name="plan" class="sr-only" id="planselect1"
                                                            checked>
@@ -119,7 +119,7 @@
                                                 </label>
                                             </div>
 
-                                            <div class="col-xs-2 rates">
+                                            <div class="col-sm-2 col-xs-4 rates">
                                                 <label for="planselect2">
                                                     <input type="radio" name="plan" class="sr-only" id="planselect2">
                                                     <div class="checkbox-box">
@@ -135,7 +135,7 @@
                                                 </label>
                                             </div>
 
-                                            <div class="col-xs-2 rates">
+                                            <div class="col-sm-2 col-xs-4 rates">
                                                 <label for="planselect3">
                                                     <input type="radio" name="plan" class="sr-only" id="planselect3">
                                                     <div class="checkbox-box">
@@ -151,7 +151,7 @@
                                                 </label>
                                             </div>
 
-                                            <div class="col-xs-2 rates">
+                                            <div class="col-sm-2 col-xs-4 rates">
                                                 <label for="planselect4">
                                                     <input type="radio" name="plan" class="sr-only" id="planselect4">
                                                     <div class="checkbox-box">
@@ -167,7 +167,7 @@
                                                 </label>
                                             </div>
 
-                                            <div class="col-xs-2 rates">
+                                            <div class="col-sm-2 col-xs-4 rates">
                                                 <label for="planselect5">
                                                     <input type="radio" name="plan" class="sr-only" id="planselect5">
                                                     <div class="checkbox-box">
@@ -183,7 +183,7 @@
                                                 </label>
                                             </div>
 
-                                            <div class="col-xs-2 rates">
+                                            <div class="col-sm-2 col-xs-4 rates">
                                                 <label for="planselect6">
                                                     <input type="radio" name="plan" class="sr-only" id="planselect6">
                                                     <div class="checkbox-box">
@@ -258,7 +258,7 @@
                 </div>
                 <aside class="col-md-4">
 
-                    <div class="box-shadowed">
+                    <div class="box-shadowed m30top">
                         <h3 class="headed-bg main-head small tbg">Benefits You Get</h3>
                         <div class="icon icon-14 lg-head-before"></div>
                         <p>MHR Writer comes with suitable pricing plan which is easily affordable by every student. We
@@ -272,7 +272,7 @@
                         <div class="call-number">+44 800 048 8966</div>
                     </div>
 
-                    <div class="request-call">
+                    <div class="request-call m30bottom">
                         <h3 class="main-head">Request Call Back</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text </p>

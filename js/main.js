@@ -67,9 +67,9 @@ if (WinWidth <= 767) {
 //glide slider settings end
 
 
+//input increament button
 
-//plugin bootstrap minus and plus
-//http://jsfiddle.net/laelitenetwork/puJ6G/
+var $incr = $('.input-number');
 $('.btn-number').click(function(e){
     e.preventDefault();
 
@@ -101,10 +101,10 @@ $('.btn-number').click(function(e){
         input.val(0);
     }
 });
-$('.input-number').focusin(function(){
+$incr.focusin(function(){
     $(this).data('oldValue', $(this).val());
 });
-$('.input-number').change(function() {
+$incr.change(function() {
 
     minValue =  parseInt($(this).attr('min'));
     maxValue =  parseInt($(this).attr('max'));
@@ -126,7 +126,8 @@ $('.input-number').change(function() {
 
 
 });
-$(".input-number").keydown(function (e) {
+
+$incr.keydown(function (e) {
     // Allow: backspace, delete, tab, escape, enter and .
     if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
         // Allow: Ctrl+A
@@ -141,3 +142,13 @@ $(".input-number").keydown(function (e) {
         e.preventDefault();
     }
 });
+//input increament button end
+
+
+//free sample form collapse
+$('.free-sample-download').on('click', function (e) {
+    e.preventDefault();
+    $('.sample-form-wrap').slideDown();
+})
+
+//free sample form collapse end

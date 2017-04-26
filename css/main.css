@@ -281,6 +281,18 @@ textarea {
 .ptop-10 {
   padding-top: 10px !important;
 }
+.pbottom-20 {
+  padding-bottom: 20px !important;
+}
+.ptop-20 {
+  padding-top: 20px !important;
+}
+.pbottom-30 {
+  padding-bottom: 30px !important;
+}
+.ptop-30 {
+  padding-top: 30px !important;
+}
 .btn {
   box-shadow: 0 0 0 transparent;
   text-transform: none;
@@ -609,6 +621,9 @@ nav.navbar {
 }
 .icon.icon-14 {
   background-position: -561px -3px;
+}
+.icon.icon-15 {
+  background-position: -185px -395px;
 }
 .main-head {
   font-size: 24px;
@@ -1174,7 +1189,29 @@ input[type="radio"]:checked + .checkbox-box .radio-custom span:after {
   font-weight: 500;
   padding: 10px 0;
 }
+.overlapped {
+  margin-top: -90px;
+}
+.contact .request-call {
+  box-shadow: 0 15px 50px 0 rgba(3, 1, 21, 0.25);
+}
+.free-sample-download {
+  margin: 15px 0;
+}
+.sample-form-wrap {
+  float: left;
+  padding: 10px 15px 20px;
+  width: 100%;
+}
+.bordered:not(.form-control) {
+  border: 1px solid #DDD;
+  float: left;
+  width: 100%;
+}
 @media (max-width: 991px) {
+  .body {
+    padding-top: 130px;
+  }
   .main-footer p {
     font-size: 13px;
   }
@@ -1305,6 +1342,9 @@ input[type="radio"]:checked + .checkbox-box .radio-custom span:after {
   }
   .footer-contact li {
     font-size: 13px;
+  }
+  .rates {
+    width: 50%;
   }
 }
 @media (max-width: 400px) {
