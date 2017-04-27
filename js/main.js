@@ -152,3 +152,100 @@ $('.free-sample-download').on('click', function (e) {
 })
 
 //free sample form collapse end
+
+
+//steps
+
+
+var navListItems = $('ul.setup-panel li a'),
+    allWells = $('.setup-content');
+
+allWells.hide();
+
+navListItems.click(function(e)
+{
+    e.preventDefault();
+    var $target = $($(this).attr('href')),
+        $item = $(this).closest('li');
+
+    if (!$item.hasClass('disabled')) {
+        navListItems.closest('li').removeClass('active');
+        $item.addClass('active');
+        allWells.hide();
+        $target.show();
+    }
+});
+
+$('ul.setup-panel li.active a').trigger('click');
+
+// DEMO ONLY //
+$('#activate-step-2').on('click', function(e) {
+    $('ul.setup-panel li:eq(1)').removeClass('disabled');
+    $('ul.setup-panel li a[href="#step-2"]').trigger('click');
+    $(this).remove();
+})
+
+$('#activate-step-3').on('click', function(e) {
+    $('ul.setup-panel li:eq(2)').removeClass('disabled');
+    $('ul.setup-panel li a[href="#step-3"]').trigger('click');
+    $(this).remove();
+})
+
+$('#activate-step-4').on('click', function(e) {
+    $('ul.setup-panel li:eq(3)').removeClass('disabled');
+    $('ul.setup-panel li a[href="#step-4"]').trigger('click');
+    $(this).remove();
+})
+
+$('#activate-step-3').on('click', function(e) {
+    $('ul.setup-panel li:eq(2)').removeClass('disabled');
+    $('ul.setup-panel li a[href="#step-3"]').trigger('click');
+    $(this).remove();
+})
+
+
+
+
+//steps end
+
+
+//dropzone
+
+$('#dropzone').on('dragover', function() {
+    $(this).addClass('hover');
+});
+
+$('#dropzone').on('dragleave', function() {
+    $(this).removeClass('hover');
+});
+
+$('#dropzone input').on('change', function(e) {
+    var file = this.files[0];
+
+    $('#dropzone').removeClass('hover');
+
+    if (this.accept && $.inArray(file.type, this.accept.split(/, ?/)) == -1) {
+        return alert('File type not allowed.');
+    }
+
+    $('#dropzone').addClass('dropped');
+    $('#dropzone img').remove();
+
+    if ((/^image\/(gif|png|jpeg)$/i).test(file.type)) {
+        var reader = new FileReader(file);
+
+        reader.readAsDataURL(file);
+
+        reader.onload = function(e) {
+            var data = e.target.result,
+                $img = $('<img />').attr('src', data).fadeIn();
+
+            $('#dropzone div').html($img);
+        };
+    } else {
+        var ext = file.name.split('.').pop();
+
+        $('#dropzone div').html(ext);
+    }
+});
+//dropzone end

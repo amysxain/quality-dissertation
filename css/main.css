@@ -1208,6 +1208,177 @@ input[type="radio"]:checked + .checkbox-box .radio-custom span:after {
   float: left;
   width: 100%;
 }
+.custom-text {
+  border: 1px solid #dddddd;
+  display: block;
+  font-weight: normal;
+  padding: 8px 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.checkboxes input:checked ~ .custom-text {
+  border-color: #1584ff;
+  color: #1584ff;
+}
+.normal-label {
+  margin-top: 20px;
+  color: #1584ff;
+  margin-bottom: 4px;
+}
+.checkboxes {
+  float: left;
+  margin-right: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  box-shadow: 0 0 0 transparent;
+  text-transform: none;
+  border: 0 none;
+  padding: 8px 15px;
+  margin: 0;
+  color: #FFF;
+  border-radius: 3px;
+  min-width: 150px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  background: #1584ff;
+  border: 1px solid #1584ff;
+  box-shadow: 0 10px 20px rgba(21, 132, 255, 0.29), 0 6px 6px rgba(21, 132, 255, 0.23);
+}
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus:hover,
+.nav-pills > li.active > a:hover:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:focus:focus,
+.nav-pills > li.active > a:hover:focus {
+  box-shadow: 0 6px 10px 0 rgba(38, 50, 56, 0.08), 0 1px 18px 0 rgba(38, 50, 56, 0.06), 0 3px 5px -1px rgba(38, 50, 56, 0.05);
+  color: #FFF;
+}
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus:hover,
+.nav-pills > li.active > a:hover:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:focus:focus,
+.nav-pills > li.active > a:hover:focus {
+  background: #1584ff;
+  box-shadow: 0 5px 10px 0 rgba(21, 132, 255, 0.19), 0 12px 15px 0 rgba(21, 132, 255, 0.24);
+}
+.nav-pills > li:not(.disabled):not(.active) > a {
+  box-shadow: 0 0 0 transparent;
+  text-transform: none;
+  border: 0 none;
+  padding: 8px 15px;
+  margin: 0;
+  color: #FFF;
+  border-radius: 3px;
+  min-width: 150px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  background: #72b74e;
+  border: 1px solid #72b74e;
+  box-shadow: 0 3px 6px rgba(114, 183, 78, 0.16), 0 3px 6px rgba(114, 183, 78, 0.23);
+  color: #ffffff;
+}
+.nav-pills > li:not(.disabled):not(.active) > a:hover,
+.nav-pills > li:not(.disabled):not(.active) > a:focus {
+  box-shadow: 0 6px 10px 0 rgba(38, 50, 56, 0.08), 0 1px 18px 0 rgba(38, 50, 56, 0.06), 0 3px 5px -1px rgba(38, 50, 56, 0.05);
+  color: #FFF;
+}
+.nav-pills > li:not(.disabled):not(.active) > a:hover,
+.nav-pills > li:not(.disabled):not(.active) > a:focus {
+  background: #72b74e;
+  box-shadow: 0 10px 20px rgba(114, 183, 78, 0.29), 0 6px 6px rgba(114, 183, 78, 0.23);
+}
+.nav-justified > li > a {
+  box-shadow: 0 0 0 transparent;
+  text-transform: none;
+  border: 0 none;
+  padding: 8px 15px;
+  margin: 0;
+  color: #FFF;
+  border-radius: 3px;
+  min-width: 150px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.nav-justified > li > a:hover,
+.nav-justified > li > a:focus {
+  box-shadow: 0 6px 10px 0 rgba(38, 50, 56, 0.08), 0 1px 18px 0 rgba(38, 50, 56, 0.06), 0 3px 5px -1px rgba(38, 50, 56, 0.05);
+  color: #FFF;
+}
+.nav-justified > li:not(:last-child) > a {
+  margin-right: 5px !important;
+}
+#dropzone {
+  border: 1px dashed #dddddd;
+  border-radius: 3px;
+  color: #ffffff;
+  height: 50px;
+  margin: 0 auto 20px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#dropzone:before {
+  content: 'Upload';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  box-shadow: 0 0 0 transparent;
+  text-transform: none;
+  border: 0 none;
+  padding: 8px 15px;
+  margin: 0;
+  color: #FFF;
+  border-radius: 3px;
+  min-width: 150px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  background: #72b74e;
+  border: 1px solid #72b74e;
+  box-shadow: 0 3px 6px rgba(114, 183, 78, 0.16), 0 3px 6px rgba(114, 183, 78, 0.23);
+}
+#dropzone:before:hover,
+#dropzone:before:focus {
+  box-shadow: 0 6px 10px 0 rgba(38, 50, 56, 0.08), 0 1px 18px 0 rgba(38, 50, 56, 0.06), 0 3px 5px -1px rgba(38, 50, 56, 0.05);
+  color: #FFF;
+}
+#dropzone:before:hover,
+#dropzone:before:focus {
+  background: #72b74e;
+  box-shadow: 0 10px 20px rgba(114, 183, 78, 0.29), 0 6px 6px rgba(114, 183, 78, 0.23);
+}
+#dropzone.hover {
+  border: 2px dashed #DD5144;
+}
+#dropzone.dropped {
+  border: 1px dashed #72b74e;
+}
+#dropzone div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#dropzone img {
+  border-radius: 10px;
+  vertical-align: middle;
+  max-width: 95%;
+  max-height: 95%;
+}
+#dropzone [type="file"] {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 @media (max-width: 991px) {
   .body {
     padding-top: 130px;
