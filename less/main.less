@@ -104,11 +104,13 @@ hr {
   width: 100%
 }
 
-ul {
+ul, ol {
   padding: 0;
   margin: 0;
 }
-
+ol {
+  padding-left: 15px;
+}
 li {
   list-style: none
 }
@@ -1334,6 +1336,109 @@ input[type="radio"]:checked + .checkbox-box {
 }
 
 //order end
+
+//blog listing
+
+.blog-box {
+  margin-top: 30px;
+  .post-content {
+    background: rgba(255, 255, 255, .9);
+    .z-depth-2;
+    margin: -60px 0 0 5%;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    width: 90%;
+    .main-head {
+      margin-top: 0;
+    }
+
+    .transition;
+
+  }
+  &:hover {
+    .post-content {
+      .z-depth-5
+    }
+  }
+
+}
+
+.blog-image img {
+  width: 100%;
+}
+
+.sidebar-links {
+  padding: 10px 30px 30px;
+  margin: 0;
+}
+
+.sidebar-links a {
+  .sclr;
+  text-decoration: none;
+  &:hover {
+    .pclr
+  }
+}
+
+.sidebar-links li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.sidebar-links li {
+  padding-left: 20px;
+  position: relative;
+}
+
+//blog listing end
+
+//blog inner
+
+.blog-box.blog-details {
+  margin-bottom: 30px;
+  .post-content {
+    margin: 0;
+    width: 100%;
+    .blog-image {
+      margin-bottom: 30px;
+    }
+    .main-head {
+      font-size: 24px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+     font-size: 16px;
+    }
+    ul {
+      margin: 10px 0;
+      > li {
+        position: relative;
+        padding-left: 15px;
+        &:before {
+          background: #1b1b1b none repeat scroll 0 0;
+          border-radius: 40px;
+          content: "";
+          display: inline-block;
+          height: 5px;
+          margin-left: -15px;
+          margin-right: 10px;
+          position: relative;
+          top: -3px;
+          width: 5px;
+        }
+      }
+    }
+    ol li{
+      list-style-type: decimal;
+    }
+    p img {
+      border: 1px solid #dddddd;
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+}
+
+//blog inner end
 
 @media (max-width: 1199px) {
 

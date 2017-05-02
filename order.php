@@ -149,7 +149,7 @@
 
                                     <div class="col-sm-12">
                                         <button id="activate-step-3"
-                                                class="btn btn-tclr waves-effect ripple pull-right">Activate Step 3
+                                                class="btn btn-tclr waves-effect ripple pull-right">Next
                                         </button>
                                     </div>
                                     <div class="clearfix"></div>

@@ -188,9 +188,13 @@ hr {
 .full-width {
   width: 100%;
 }
-ul {
+ul,
+ol {
   padding: 0;
   margin: 0;
+}
+ol {
+  padding-left: 15px;
 }
 li {
   list-style: none;
@@ -1378,6 +1382,95 @@ input[type="radio"]:checked + .checkbox-box .radio-custom span:after {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.blog-box {
+  margin-top: 30px;
+}
+.blog-box .post-content {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 5px 0 rgba(38, 50, 56, 0.08), 0 1px 10px 0 rgba(38, 50, 56, 0.06), 0 2px 4px -1px rgba(38, 50, 56, 0.05);
+  margin: -60px 0 0 5%;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  width: 90%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.blog-box .post-content .main-head {
+  margin-top: 0;
+}
+.blog-box:hover .post-content {
+  box-shadow: 0 16px 24px 2px rgba(38, 50, 56, 0.08), 0 6px 30px 5px rgba(38, 50, 56, 0.06), 0 8px 10px -5px rgba(38, 50, 56, 0.12);
+}
+.blog-image img {
+  width: 100%;
+}
+.sidebar-links {
+  padding: 10px 30px 30px;
+  margin: 0;
+}
+.sidebar-links a {
+  color: #263238;
+  text-decoration: none;
+}
+.sidebar-links a:hover {
+  color: #72b74e;
+}
+.sidebar-links li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.sidebar-links li {
+  padding-left: 20px;
+  position: relative;
+}
+.blog-box.blog-details {
+  margin-bottom: 30px;
+}
+.blog-box.blog-details .post-content {
+  margin: 0;
+  width: 100%;
+}
+.blog-box.blog-details .post-content .blog-image {
+  margin-bottom: 30px;
+}
+.blog-box.blog-details .post-content .main-head {
+  font-size: 24px;
+}
+.blog-box.blog-details .post-content h1,
+.blog-box.blog-details .post-content h2,
+.blog-box.blog-details .post-content h3,
+.blog-box.blog-details .post-content h4,
+.blog-box.blog-details .post-content h5,
+.blog-box.blog-details .post-content h6 {
+  font-size: 16px;
+}
+.blog-box.blog-details .post-content ul {
+  margin: 10px 0;
+}
+.blog-box.blog-details .post-content ul > li {
+  position: relative;
+  padding-left: 15px;
+}
+.blog-box.blog-details .post-content ul > li:before {
+  background: #1b1b1b none repeat scroll 0 0;
+  border-radius: 40px;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  margin-left: -15px;
+  margin-right: 10px;
+  position: relative;
+  top: -3px;
+  width: 5px;
+}
+.blog-box.blog-details .post-content ol li {
+  list-style-type: decimal;
+}
+.blog-box.blog-details .post-content p img {
+  border: 1px solid #dddddd;
+  max-width: 100%;
+  padding: 10px;
 }
 @media (max-width: 991px) {
   .body {
