@@ -444,7 +444,7 @@ nav.navbar {
 .navbar-default .navbar-nav > li > a {
   .sclr;
   font-weight: 400;
-  padding: 30px 15px;
+  padding: 30px 25px;
 }
 
 .navbar-nav {
@@ -1445,7 +1445,9 @@ input[type="radio"]:checked + .checkbox-box {
 //blog inner end
 
 @media (max-width: 1199px) {
-
+  .navbar-default .navbar-nav > li > a {
+    padding: 30px 12px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1530,10 +1532,16 @@ input[type="radio"]:checked + .checkbox-box {
     text-align: left;
   }
 
+  .navbar-brand {
+    padding-top: 6px;
+  }
   .header-number {
     margin-top: 20px;
     position: absolute;
     right: 70px;
+  }
+  .header-number, .navbar-toggle {
+    margin-top: 7px !important;
   }
 
   .navbar-toggle {
